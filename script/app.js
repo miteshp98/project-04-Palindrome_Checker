@@ -11,7 +11,7 @@ checkBtn.addEventListener("click", function () {
 });
 
 function checkPalindrome() {
-  let userWord = userInput.value.toLowerCase();
+  let userWord = userInput.value.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
 
   if (userWord === "") {
     alert("No Input");
